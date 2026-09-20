@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package token;
+
+import "identity/principal.proto";
+import "token/grant.proto";
+
+// Proof is a principal and the grant issued to it: what a completed
+// authentication returns, and what is presented to exchange for a token.
+message Proof {
+  identity.Principal principal = 1;
+  Grant grant = 2;
+}

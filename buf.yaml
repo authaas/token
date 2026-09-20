@@ -4,6 +4,8 @@ modules:
   - path: protos
     name: buf.build/authaas/token
 
+deps: [buf.build/authaas/types]
+
 lint:
   use:
     - STANDARD

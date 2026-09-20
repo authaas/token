@@ -4,7 +4,7 @@ package token;
 
 // JWT holds claims for encoding
 message JWT {
-  // Subject (JWT "sub") - the principal_id this credential represents
+  // Subject (JWT "sub") - the subject this token represents
   string sub = 1;
 
   // Audience (JWT "aud") - the intended recipient/resource server(s)

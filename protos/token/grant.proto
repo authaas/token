@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package token;
+
+// Grant is a single-use secret bound to one principal: 32 cryptographically
+// random bytes, issued by an authentication and exchanged once for a token.
+message Grant {
+  bytes bytes = 1;
+}
