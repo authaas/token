@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.3.0 - 2026-09-22
+#### Features
+- identity.ID alignment - (068b2fb) - Nathan Blair
+
+- - -
+
 ## 0.2.2 - 2026-09-20
 #### Bug Fixes
 - bump identity - (9d91133) - Nathan Blair
