@@ -3,7 +3,7 @@ syntax = "proto3";
 package token;
 
 // GrantHash is the SHA-256 digest of a grant's exact bytes, with no salt and
-// no key derivation: the form in which a principal's outstanding grant is
+// no key derivation: the form in which an identity's outstanding grant is
 // held.
 message GrantHash {
   bytes bytes = 1;
