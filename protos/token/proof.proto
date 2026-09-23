@@ -8,6 +8,6 @@ import "token/grant.proto";
 // Proof is the identity and grant issued to it: what a completed
 // authentication returns, and what is presented to exchange for a token.
 message Proof {
-  identity.ID identity = 1;
+  identity.ID identity_id = 1;
   Grant grant = 2;
 }
