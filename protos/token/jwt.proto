@@ -8,10 +8,10 @@ import "realm/id.proto";
 // JWT holds claims for encoding
 message JWT {
   // Realm (JWT "realm_id") - the realm the subject is a member of
-  realm.ID realm_id = 1 [json_name = "rid"];
+  realm.ID realm_id = 1;
 
   // Subject (JWT "sub") - the subject this token represents
-  identity.ID identity_id = 2 [json_name = "sub"];
+  identity.ID identity_id = 2;
 
   // Issuer (JWT "iss") - who issued this token
   string iss = 3;
