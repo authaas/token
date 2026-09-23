@@ -2,23 +2,28 @@ syntax = "proto3";
 
 package token;
 
+import "realm/id.proto";
+
 // JWT holds claims for encoding
 message JWT {
-  // Subject (JWT "sub") - the subject this token represents
-  string sub = 1;
+  // Realm (JWT "realm_id") - the realm the subject is a member of
+  realm.ID realm_id = 1 [json_name = "rid"];
 
-  // Audience (JWT "aud") - the intended recipient/resource server(s)
-  repeated string aud = 2;
+  // Subject (JWT "sub") - the subject this token represents
+  string sub = 2;
 
   // Issuer (JWT "iss") - who issued this token
   string iss = 3;
 
-  // Expiration time (JWT "exp") - Unix timestamp (unset = never expires)
-  optional int64 exp = 4;
-
   // Issued at (JWT "iat") - Unix timestamp
-  int64 iat = 5;
+  int64 iat = 4;
+
+  // Audience (JWT "aud") - the intended recipient/resource server(s)
+  repeated string aud = 5;
 
   // Not before (JWT "nbf") - Unix timestamp
   optional int64 nbf = 6;
+
+  // Expiration time (JWT "exp") - Unix timestamp (unset = never expires)
+  optional int64 exp = 7;
 }
