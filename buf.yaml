@@ -4,7 +4,9 @@ modules:
   - path: protos
     name: buf.build/authaas/token
 
-deps: [buf.build/authaas/identity:0.6.0]
+deps:
+  - buf.build/authaas/identity:0.6.0
+  - buf.build/authaas/realm:0.1.0
 
 lint:
   use:

@@ -3,11 +3,14 @@ syntax = "proto3";
 package token;
 
 import "identity/id.proto";
+import "realm/id.proto";
 import "token/grant.proto";
 
-// Proof is the identity and grant issued to it: what a completed
-// authentication returns, and what is presented to exchange for a token.
+// Proof is the identity, the realm it authenticated in, and the grant issued
+// to it: what a completed authentication returns, and what is presented to
+// exchange for a token.
 message Proof {
-  identity.ID identity_id = 1;
-  Grant grant = 2;
+  realm.ID realm_id = 1;
+  identity.ID identity_id = 2;
+  Grant grant = 3;
 }

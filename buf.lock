@@ -4,3 +4,6 @@ deps:
   - name: buf.build/authaas/identity
     commit: b037abb325784162acccae4b44c29dbe
     digest: b5:3eed4de6d79f65f539b3aa2c2fd65164a80a146aedfabbdf827b9142894625f701aa9b7bd830739d299e5bcb744cacbc3a1d31883fb16d3ee515a526cb80d1d1
+  - name: buf.build/authaas/realm
+    commit: 588a7393694e433ebea8d4e14ff1ae5a
+    digest: b5:78cb53377e3b847f92e3c57cb899210d83c47c83d5f957e6e80e09f8f7537455aad8e485acedcdd0571d839a86f955a33078718e85bb1caab42f5d34c24cd4e1
