@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.4.0 - 2026-09-23
+#### Features
+- add realm for proof - (1802716) - Nathan Blair
+- proper suffix in field - (ffff8c1) - Nathan Blair
+
+- - -
+
 ## 0.3.0 - 2026-09-22
 #### Features
 - identity.ID alignment - (068b2fb) - Nathan Blair
