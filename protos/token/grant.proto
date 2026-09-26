@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package token;
 
-// Grant is a single-use secret bound to one identity: 32 cryptographically
-// random bytes, issued by an authentication and exchanged once for a token.
+// Grant is a single-use secret an authentication issues, exchanged once for a
+// token.
 message Grant {
   bytes bytes = 1;
 }

@@ -5,26 +5,26 @@ package token;
 import "identity/id.proto";
 import "realm/id.proto";
 
-// JWT holds claims for encoding
+// JWT is the claims of a token.
 message JWT {
-  // Realm (JWT "realm_id") - the realm the subject is a member of
+  // The realm the token was issued in.
   realm.ID realm_id = 1;
 
-  // Subject (JWT "sub") - the subject this token represents
+  // The identity the token was issued to.
   identity.ID identity_id = 2;
 
-  // Issuer (JWT "iss") - who issued this token
+  // Who issued the token.
   string iss = 3;
 
-  // Issued at (JWT "iat") - Unix timestamp
+  // When the token was issued.
   int64 iat = 4;
 
-  // Audience (JWT "aud") - the intended recipient/resource server(s)
+  // Who the token is intended for.
   repeated string aud = 5;
 
-  // Not before (JWT "nbf") - Unix timestamp
+  // When the token becomes valid.
   optional int64 nbf = 6;
 
-  // Expiration time (JWT "exp") - Unix timestamp (unset = never expires)
+  // When the token stops being valid; unset when it never does.
   optional int64 exp = 7;
 }
