@@ -6,7 +6,7 @@ modules:
 
 deps:
   - buf.build/authaas/identity:0.6.0
-  - buf.build/authaas/realm:0.1.0
+  - buf.build/authaas/realm:0.2.0
 
 lint:
   use:
