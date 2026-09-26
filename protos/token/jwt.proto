@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package token;
 
+import "google/protobuf/struct.proto";
 import "identity/id.proto";
 import "realm/id.proto";
 
@@ -27,4 +28,7 @@ message JWT {
 
   // When the token stops being valid; unset when it never does.
   optional int64 exp = 7;
+
+  // Every other claim the token carries.
+  google.protobuf.Struct additional = 8;
 }
