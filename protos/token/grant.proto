@@ -5,5 +5,5 @@ package token;
 // Grant is a single-use secret an authentication issues, exchanged once for a
 // token.
 message Grant {
-  bytes bytes = 1;
+  string value = 1;
 }
