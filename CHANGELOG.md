@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.9.0 - 2026-09-26
+#### Features
+- Proof gets realm mechanism instead of just realm - (ff315c3) - Nathan Blair
+
+- - -
+
 ## 0.8.0 - 2026-09-26
 #### Features
 - remove GrantHash type; now an implementation detail - (246da91) - Nathan Blair
